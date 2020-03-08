@@ -2,11 +2,29 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addId } from '@/store/actions';
 import Header from '@/components/header';
+// 接口请求方法引入
+import FetchData from '@/utils/fetchdata';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
+  }
+  componentWillMount () {
+    // 接口请求示例
+    var obj = {
+      api: 'getlist',
+      data: {
+        id: '1231'
+      },
+      success: (res) => {
+        console.log(res)
+      },
+      fail: (err) => {
+        console.log(err);
+      }
+    }
+    FetchData.doGet(obj);
   }
   clickHandle = () => {
     this.props.onTodoClick(121);
