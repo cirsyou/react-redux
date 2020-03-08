@@ -21,10 +21,13 @@ es6语法的兼容处理
 常见方法类的封装
 ```
 
-1. 运行环境配置
+### 运行环境配置
 ```text
 安装nodejs、安装react脚手架create-react-app
 ```
-2. 创建项目 `create-react-app 项目名称`
-3. 终端切至项目，`npm run eject`弹出项目配置
+### 创建并完成项目配置项的弹出
+1. 创建项目 `create-react-app 项目名称`
+2. 终端切至项目，`npm run eject`弹出项目配置
+
+
 

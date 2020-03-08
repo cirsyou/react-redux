@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// 移动端适配
+import '@/utils/rem';
 // 通用浏览器初始化样式表
 import '@/assets/style/normalize.css';
 // 常用标签进行基本初始化

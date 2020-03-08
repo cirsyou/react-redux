@@ -29,7 +29,7 @@ const mapStateToProps = (state, ownProps) => {
     id: state.homeReducer.id
   }
 }
-// 提交action的方法
+// 将需要提交action的方法传给组件
 const mapDispatchToProps = (dispatch) => {
   return {
     onTodoClick: (id) => {
