@@ -33,7 +33,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onTodoClick: (id) => {
-      console.log(id);
       dispatch(addId(id))
     }
   }
